@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nginx-clean
+  name: nginx-clean
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-clean
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nginx-clean
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}

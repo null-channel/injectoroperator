@@ -1,0 +1,16 @@
+domain: dev.thenullchannel
+layout:
+- go.kubebuilder.io/v3
+projectName: apple-operator
+repo: github.com/null-channel/apple-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: dev.thenullchannel
+  group: apple
+  kind: ContainerInjector
+  path: github.com/null-channel/apple-operator/api/v1
+  version: v1
+version: "3"

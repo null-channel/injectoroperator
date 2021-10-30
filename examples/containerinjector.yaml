@@ -1,0 +1,10 @@
+apiVersion: apple.dev.thenullchannel/v1
+kind: ContainerInjector
+metadata:
+  name: containerinjector-sample
+spec:
+  image: "busybox"
+  label: "help"
+  command: ["sleep"]
+  args: ["5000"]
+  # TODO(user): Add fields here
